@@ -1,0 +1,45 @@
+.formdiv{
+  display: grid;
+  /* gap: 30px; */
+  justify-content: center;
+  background-color: #166572;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 23%;
+}
+.formdiv>input{
+  height: 40px;
+  width: 140%;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.cp{
+  background-color: rgb(180, 173, 173);
+  border-radius: 2px;
+  height: 21px;
+  margin-top: 20px;
+}
+.filediv{
+  display:flex;
+ width: 105%;
+ justify-content: space-between;
+ margin-top: 10px;
+}
+.filediv>h3{
+  color: whitesmoke;
+}
+button{
+  background-color: chocolate;
+  height: 40px;
+  margin: 20px;
+}
+.icon{
+  width: 5%;
+  margin-left: 1%;
+}
+body{
+  background-color: greenyellow;
+}
+.acc{
+  margin: 10px;
+}

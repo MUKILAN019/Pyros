@@ -47,7 +47,7 @@ function RegisterForm() {
     Object.keys(formData).forEach((key) => data.append(key, formData[key]));
 
     try {
-      const response = await axios.post('http://localhost:5009/api/users/register', data);
+      const response = await axios.post('https://pyros.onrender.com/api/users/register', data);
       alert('Registered successfully! Slot Code: ' + response.data.slotCode);
     } catch (error) {
       console.error('Error registering user:', error);

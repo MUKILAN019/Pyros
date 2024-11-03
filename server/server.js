@@ -11,7 +11,7 @@ const userRouter = require('./router');
 
 app.use(express.json());
 app.use(cors({
-    origin:["http://localhost:5173","https://pyros.onrender.com","https://radiant-mousse-11bd9b.netlify.app"],
+    origin:["http://localhost:5173","https://pyros.onrender.com","https://golden-seahorse-64b42e.netlify.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));

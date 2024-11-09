@@ -15,11 +15,9 @@ export default function UserLogin() {
             setIsLoading(false);
             return;
           }
-        //   console.log('work')
-          // Make the request to fetch the user profile data
-          const response = await axios.get('http://localhost:5009/api/users/user-profile', {
+          const response = await axios.get('https://pyros-roow.onrender.com/api/users/user-profile', {
             headers: {
-              'Authorization': `Bearer ${token}`, // Send token in Authorization header
+              'Authorization': `Bearer ${token}`, 
             },
           });
   

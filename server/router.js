@@ -148,9 +148,8 @@ router.post('/log-footprint/:slotCode', async (req, res) => {
 // User Login
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
-
+  console.log('hii')
   if (username === process.env.admin && password === process.env.adminPass) {
-    // Admin login
     const token = jwt.sign({ role: 'admin' }, 'secretKey');
     return res.json({ token, role: 'admin' });
   }

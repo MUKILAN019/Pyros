@@ -9,11 +9,11 @@ export default function QrCode() {
   useEffect(() => {
     if (slotCode) {
       // Fetch QR Code data for the user
-      axios.get(`http://localhost:5009/api/users/user/${slotCode}`)
+      axios.get(`https://pyros-roow.onrender.com/api/users/user/${slotCode}`)
         .then((response) => {
           setQrCode(response.data.qrCode);
 
-          return axios.post(`http://localhost:5009/api/users/log-footprint/${slotCode}`);
+          return axios.post(`https://pyros-roow.onrender.com/api/users/log-footprint/${slotCode}`);
         })
         .then(() => {
           console.log('Footprint logged successfully');

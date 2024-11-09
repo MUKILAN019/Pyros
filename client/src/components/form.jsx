@@ -72,7 +72,7 @@ function RegisterForm() {
     });
 
     try {
-      const response = await axios.post('http://localhost:5009/api/users/register', data);
+      const response = await axios.post('https://pyros-roow.onrender.com/api/users/register', data);
       const slotCode = response.data.slotCode;
       alert('Registered successfully! Slot Code: ' + slotCode);
 

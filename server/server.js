@@ -11,7 +11,7 @@ const userRouter = require('./router');
 
 app.use(express.json());
 app.use(cors({
-    origin:["http://localhost:5173","http://localhost:5009","https://pyros.onrender.com","https://golden-seahorse-64b42e.netlify.app","https://legendary-starburst-c5d285.netlify.app","https://pyros-roow.onrender.com","https://pyroa-oup5.vercel.app","https://pyros-eakppk06c-mukilans-projects-ac535f88.vercel.app","https://pyros.vercel.app"],
+    origin:["http://localhost:5173","http://localhost:5009","https://pyros.onrender.com","https://golden-seahorse-64b42e.netlify.app","https://legendary-starburst-c5d285.netlify.app","https://pyros-roow.onrender.com","https://pyroa-oup5.vercel.app","https://pyros-eakppk06c-mukilans-projects-ac535f88.vercel.app","https://pyros.vercel.app","https://pyros-henna.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
 }));
